@@ -7,9 +7,10 @@ class Room
         Vector<Clue> *clues;
         Person *person;
     public:
-        Room();
+        Room(Person *p);
         Person getPerson();
         void addClue(Clue *c);
+        int numberOfClues();
 };
 
 #endif // ROOM_H

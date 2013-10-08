@@ -5,10 +5,12 @@ class Clue
 {
     private:
         string description;
+        bool found;
 
     public:
         Clue();
         string getDescription();
+        bool isFound();
 };
 
 #endif // CLUE_H
