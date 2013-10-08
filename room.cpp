@@ -1,8 +1,8 @@
 #include "room.h"
 
-Room::Room()
+Room::Room(Person *p)
 {
-    person = new Person();
+    person = p;
 }
 
 Room::getPerson()
@@ -13,4 +13,8 @@ Room::getPerson()
 Room::addClue(Clue *c)
 {
     clues.push_back(*c);
+}
+
+int Room::numberOfClues() {
+    return clues.size();
 }
