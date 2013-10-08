@@ -7,7 +7,6 @@ class Person
         Vector<String> *conversation;
     public:
         Person();
-
 };
 
 #endif // PERSON_H

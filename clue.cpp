@@ -9,3 +9,10 @@ Clue::getDescription()
 {
     return description;
 }
+
+Clue::isFound()
+{
+    return found;
+}
+
+

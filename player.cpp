@@ -2,7 +2,7 @@
 
 Player::Player()
 {
-
+    oxygen = 100;
 }
 
 Player::getClues()
