@@ -2,12 +2,16 @@
 #define PLAYER_H
 
 #include "clue.h"
+#include <string>
+#include <vector>
+using namespace std;
+using std::vector;
 
 class Player
 {
     private:
         int oxygen;
-        vector <Clue> *clues;
+        vector <Clue> clues;
 
     public:
         Player();
@@ -15,7 +19,7 @@ class Player
         int getOxygen();
         void loseOxygen();
         void resupplyOxygen();
-        void addClue(Clue c);
+        void addClue(Clue *c);
 };
 
 #endif // PLAYER_H

@@ -1,16 +1,16 @@
-#include "clue.h"
+#include "Clue.h"
 
-Clue::Clue(string description)
+Clue::Clue(string *description)
 {
     this->description = description;
 }
 
-Clue::getDescription()
+string* Clue::getDescription()
 {
     return description;
 }
 
-Clue::isFound()
+bool Clue::isFound()
 {
     return found;
 }
