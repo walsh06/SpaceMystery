@@ -15,8 +15,16 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+public slots:
+    void updateOxygen();
+
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
+
+
 
 #endif // MAINWINDOW_H
