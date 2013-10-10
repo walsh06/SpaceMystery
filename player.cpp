@@ -1,31 +1,31 @@
-#include "player.h"
+#include "Player.h"
 
 Player::Player()
 {
     oxygen = 100;
 }
 
-Player::getClues()
+vector<Clue> Player::getClues()
 {
     return clues;
 }
 
-Player::resupplyOxygen()
+void Player::resupplyOxygen()
 {
     oxygen = 10;
 }
 
-Player::loseOxygen()
+void Player::loseOxygen()
 {
     oxygen--;
 }
 
-Player::getOxygen()
+int Player::getOxygen()
 {
     return oxygen;
 }
 
-Player::addClue(Clue *c)
+void Player::addClue(Clue *c)
 {
    clues.push_back(*c);
 }
