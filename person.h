@@ -1,10 +1,13 @@
 #ifndef PERSON_H
 #define PERSON_H
-
+#include <string>
+#include <vector>
+using namespace std;
+using std::vector;
 class Person
 {
     private:
-        Vector<String> *conversation;
+        vector<string> conversation;
     public:
         Person();
 };
