@@ -3,20 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-    Player *player1;
-    Person *p1;
-    Room *room1, *room2;
+    Player *p = new Player();
+    string *blood = new string("blood");
+    Clue *c1 = new Clue(blood);
+    Room *r = new Room();
 
-    Clue *c1, *c2, *c3;
-    string *clued = new string("Blood");
-    c1 = new Clue(clued);
-    c2 = new Clue(new string("Dagger"));
+    r->addClue(c1);
 
-    room1 = new Room(p1);
-    room1->addClue(c1);
-    room1->addClue(c2);
+    string *s = new string("blood");
+    p->addClue(new Clue(s));
 
-    printf("%d", room1->numberOfClues());
+    Clue pc = p->getClue(0);
+    cout << *r->getDescription() << endl;
+    cout << r->numberOfClues() << endl;
+    cout << *pc.getDescription() << endl;
 }
 
 SpaceMystery::SpaceMystery()
