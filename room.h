@@ -11,15 +11,17 @@ using std::vector;
 class Room
 {
     private:
-        vector <Clue> *clues;
+        vector <Clue> clues;
         Person *person;
         string *description;
 
     public:
+        Room();
         Room(Person *p);
         Person* getPerson();
         void addClue(Clue *c);
         int numberOfClues();
+        string* getDescription();
 };
 
 #endif // ROOM_H

@@ -17,3 +17,5 @@ class Clue
 };
 
 #endif // CLUE_H
+
+

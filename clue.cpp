@@ -3,6 +3,7 @@
 Clue::Clue(string *description)
 {
     this->description = description;
+    found = false;
 }
 
 string* Clue::getDescription()
@@ -14,5 +15,8 @@ bool Clue::isFound()
 {
     return found;
 }
+
+
+
 
 
