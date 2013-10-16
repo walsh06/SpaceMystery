@@ -3,6 +3,7 @@
 Clue::Clue(string *description)
 {
     this->description = description;
+    found = false;
 }
 
 string* Clue::getDescription()
@@ -19,4 +20,7 @@ Clue::isValidClue()
 {
     return valid;
 }
+
+
+
 

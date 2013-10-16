@@ -1,5 +1,9 @@
 #include "Room.h"
 
+Room::Room()
+{
+    description = new string("roomDescription");
+}
 
 Room::Room(Person *p)
 {
@@ -12,11 +16,16 @@ Person* Room::getPerson()
     return person;
 }
 
+string* Room::getDescription()
+{
+    return description;
+}
+
 void Room::addClue(Clue *c)
 {
-    clues->push_back(*c);
+    clues.push_back(*c);
 }
 
 int Room::numberOfClues() {
-    return clues->size();
+    return clues.size();
 }
