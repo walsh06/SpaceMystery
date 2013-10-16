@@ -3,10 +3,9 @@
 
 #include "Player.h"
 #include "Room.h"
-#include "Clue.h"
-#include "Person.h"
+#include <iostream>
 
- using namespace std;
+using namespace std;
 
 class SpaceMystery
 {

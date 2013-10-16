@@ -1,7 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-
-#include "clue.h"
+#include "Clue.h"
 #include <string>
 #include <vector>
 using namespace std;
@@ -16,6 +15,7 @@ class Player
     public:
         Player();
         vector <Clue> getClues();
+        Clue getClue(int);
         int getOxygen();
         void loseOxygen();
         void resupplyOxygen();

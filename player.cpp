@@ -5,11 +5,6 @@ Player::Player()
     oxygen = 100;
 }
 
-vector<Clue> Player::getClues()
-{
-    return clues;
-}
-
 void Player::resupplyOxygen()
 {
     oxygen = 10;
@@ -25,7 +20,19 @@ int Player::getOxygen()
     return oxygen;
 }
 
+vector<Clue> Player::getClues()
+{
+    return clues;
+}
+
 void Player::addClue(Clue *c)
 {
    clues.push_back(*c);
 }
+
+Clue Player::getClue(int pos)
+{
+    return clues[pos];
+}
+
+
