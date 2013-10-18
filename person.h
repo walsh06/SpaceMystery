@@ -8,8 +8,12 @@ class Person
 {
     private:
         vector<string> conversation;
+        bool innocent;
+        string *name;
     public:
-        Person();
+        Person(string *name, bool innoccent);
+        string* getName();
+        bool isInnocent();
 };
 
 #endif // PERSON_H
