@@ -16,10 +16,6 @@ bool Clue::isFound()
     return found;
 }
 
-Clue::isValidClue()
-{
-    return valid;
-}
 
 
 

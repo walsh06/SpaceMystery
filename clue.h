@@ -9,7 +9,6 @@ class Clue
     private:
         string *description;
         bool found;
-        bool valid;
 
     public:
         Clue(string*);
